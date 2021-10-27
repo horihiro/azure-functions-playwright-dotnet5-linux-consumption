@@ -56,7 +56,7 @@
       "problemMatcher": "$msCompile"
     },
     {
-      "label": "install playwright",
+      "label": "install playwright (functions)",
       "type": "shell",
       "command": "${workspaceFolder}/bin/Release/net5.0/.playwright/node/linux/node",
       "args": [
@@ -69,8 +69,21 @@
       "dependsOn": "publish (functions)"
     },
     {
+      "label": "install playwright",
+      "type": "shell",
+      "command": "${workspaceFolder}/bin/Debug/net5.0/.playwright/node/linux/node",
+      "args": [
+        "${workspaceFolder}/bin/Debug/net5.0/.playwright/package/lib/cli/cli.js", "install", "chromium"],
+      "options": {
+        "env": {
+          "XDG_CACHE_HOME": "${workspaceFolder}/bin/Debug/net5.0/.playwright/"
+        }
+      },
+      "dependsOn": "build (functions)"
+    },
+    {
       "type": "func",
-      "dependsOn": "build (functions)",
+      "dependsOn": "install playwright",
       "options": {
         "cwd": "${workspaceFolder}/bin/Debug/net5.0"
       },
