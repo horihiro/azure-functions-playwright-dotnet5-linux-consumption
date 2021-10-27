@@ -2,3 +2,5 @@ bin
 obj
 so
 .vscode
+local.settings.json
+local.settings.tempalte.json

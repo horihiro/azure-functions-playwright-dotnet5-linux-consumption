@@ -2,7 +2,7 @@
   "IsEncrypted": false,
   "Values": {
     "AzureWebJobsStorage": "",
-    "XDG_CACHE_HOME": "/workspaces/playwright-dotnet-isolated/bin/Debug/net5.0/.playwright",
+    "XDG_CACHE_HOME": "/home/site/wwwroot/bin/Debug/net5.0/.playwright",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated"
   }
 }

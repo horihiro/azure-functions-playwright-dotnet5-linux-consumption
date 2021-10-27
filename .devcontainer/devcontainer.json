@@ -15,6 +15,10 @@
 		"ms-dotnettools.csharp"
 	],
 
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/site/wwwroot,type=bind,consistency=cached",
+  "workspaceFolder": "/home/site/wwwroot",
+
+
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "dotnet restore",
 
